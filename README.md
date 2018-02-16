@@ -16,5 +16,4 @@ if($s = stream_socket_server('tcp://0.0.0.0:1688'))
 			vlmcsd_stream($c);
 		}
 	}
-
 }
