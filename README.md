@@ -1,6 +1,5 @@
 # php_vlmcsd
-<h4>PHP7.2 extension php_vlmcsd for windows compile VS15</h4>
-<a href="https://github.com/codedk47/php_vlmcsd/raw/master/php_vlmcsd.dll">php_vlmcsd.dll</a>
+<a href="/codedk47/php_vlmcsd/raw/master/php_vlmcsd.dll">php_vlmcsd.dll (PHP7.2 For Windows10 VC15 x64 TS)</a><br>
 <pre>
 vlmcsd_rpcserver([string $local_socket = 'tcp://0.0.0.0:1688']);
 //or
@@ -10,7 +9,8 @@ if($s = stream_socket_server('tcp://0.0.0.0:1688'))
 {
 	for(;;)
 	{
-		if($c = stream_socket_accept($s, 6000)) {
+		if($c = stream_socket_accept($s, 6000))
+		{
 			vlmcsd_stream($c);
 		}
 	}
